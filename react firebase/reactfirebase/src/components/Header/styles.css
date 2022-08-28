@@ -6,6 +6,9 @@
     padding: 20px 60px;
 }
 
-.header-wrapper > a {
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
     color: white;
 }
