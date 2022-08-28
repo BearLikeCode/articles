@@ -1,3 +1,4 @@
+import { Header } from './components/Header'
 import './config/firebase';
 import {
   BrowserRouter as Router,
@@ -12,6 +13,7 @@ function App() {
   return (
     <>
       <Router>
+        <Header />
         <Switch>
             <Route path="/article/:id">
               <Article />

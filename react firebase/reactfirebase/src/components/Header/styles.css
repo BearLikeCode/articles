@@ -1,0 +1,11 @@
+.header {
+    background-color: darkblue;
+}
+
+.header-wrapper {
+    padding: 20px 60px;
+}
+
+.header-wrapper > a {
+    color: white;
+}
