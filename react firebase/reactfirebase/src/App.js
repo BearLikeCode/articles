@@ -8,23 +8,26 @@ import {
 import {Main} from './pages/Main';
 import {Article} from './pages/Article';
 import {NewArticle} from './pages/NewArticle';
+import { BodyWrapper } from './components/BodyWrapper';
 
 function App() {
   return (
     <>
       <Router>
         <Header />
-        <Switch>
-            <Route path="/article/:id">
-              <Article />
-            </Route>
-            <Route path="/new">
-              <NewArticle />
-            </Route>
-            <Route path="/">
-              <Main />
-            </Route>
-          </Switch>
+        <BodyWrapper>
+          <Switch>
+              <Route path="/article/:id">
+                <Article />
+              </Route>
+              <Route path="/new">
+                <NewArticle />
+              </Route>
+              <Route path="/">
+                <Main />
+              </Route>
+            </Switch>
+          </BodyWrapper>
       </Router>
     </>
   );
